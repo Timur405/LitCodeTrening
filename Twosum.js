@@ -12,3 +12,4 @@ const twoSum = (nums,target) => {
         }
     }
 }
+//Здраствуйте Андрей :)

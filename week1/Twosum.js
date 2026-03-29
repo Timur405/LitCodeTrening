@@ -1,9 +1,18 @@
 //https://leetcode.com/problems/two-sum/
 const twoSum = (nums,target) => {
-    let l = 0;
-    let r = 1;
-    while (nums[l]){}
+    let map = {}
+    for (let i = 0; i < nums.length; i++) {
+        map[nums[i]] = i;
+    }
+    for(let i = 0; i < nums.length; i++) {
+        if (map[target - nums[i]] && map[target - nums[i]] !== i ){
+            return [i, map[target - nums[i]]];
+        }
+    }
+    return false;
+
 }
+
 //Здраствуйте Андрей :)
 /*
 for(let i = 0 ; i < nums.length; i++){

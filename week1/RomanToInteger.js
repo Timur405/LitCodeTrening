@@ -19,5 +19,5 @@ const romanToInt = function(s) {
     return num;
 };
 
-
+console.log(romanToInt([1,2,3,4,5]))
 //Я map узнал как пользоваться :)

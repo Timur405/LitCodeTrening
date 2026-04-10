@@ -35,7 +35,7 @@ const vowelConsonantScore = function(s) {
         if (map1.has(s[i])){
             v++;
         }
-        else if (map2.has(s[i])){
+        if(map2.has(s[i])){
             c++;
         }
     }
